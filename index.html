@@ -207,7 +207,7 @@
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
           
-            <a href="/2020/03/23/Difference-between-GET-POST-and-PUT-in-HTTP/" class="post-title-link" itemprop="url">HTTP中GET，POST和PUT等请求方式的区别</a>
+            <a href="/2020/03/23/Difference-between-GET-POST-and-PUT-in-HTTP/" class="post-title-link" itemprop="url">HTTP常用的几种请求方式</a>
         </h1>
 
         <div class="post-meta">
@@ -216,10 +216,16 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2020-03-23 16:32:13 / 修改时间：16:46:32" itemprop="dateCreated datePublished" datetime="2020-03-23T16:32:13+08:00">2020-03-23</time>
+              <time title="创建时间：2020-03-23 16:32:13" itemprop="dateCreated datePublished" datetime="2020-03-23T16:32:13+08:00">2020-03-23</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-03-24 08:29:55" itemprop="dateModified" datetime="2020-03-24T08:29:55+08:00">2020-03-24</time>
+              </span>
 
           <br>
             <span class="post-meta-item" title="本文字数">
@@ -227,7 +233,95 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>750</span>
+              <span>4.6k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>4 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+      
+          <p>&emsp;&emsp;根据 HTTP 标准，HTTP 请求可以使用多种请求方法。HTTP1.0 定义了三种请求方法： GET, POST 和 HEAD方法。HTTP1.1 新增了六种请求方法：OPTIONS、PUT、PATCH、DELETE、TRACE 和 CONNECT 方法。</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2020/03/23/Difference-between-GET-POST-and-PUT-in-HTTP/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+	<div>
+	  
+	</div>
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/03/23/hello-world/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/cdh1.gif">
+      <meta itemprop="name" content="cdh">
+      <meta itemprop="description" content="菜逼程序员">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="cdh">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/03/23/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-03-23 16:32:13" itemprop="dateCreated datePublished" datetime="2020-03-23T16:32:13+08:00">2020-03-23</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-03-24 09:03:00" itemprop="dateModified" datetime="2020-03-24T09:03:00+08:00">2020-03-24</time>
+              </span>
+
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>386</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -245,21 +339,15 @@
     
     <div class="post-body" itemprop="articleBody">
       
-          <h3 id="1、GET"><a href="#1、GET" class="headerlink" title="1、GET"></a>1、GET</h3><p>get请求是用来获取数据的，只是用来查询数据，不对服务器的数据做任何的修改，新增，删除等操作。</p>
-<p>在这里我们认为get请求是安全的，以及幂等的。安全就是指不影响服务器的数据，幂等是指同一个请求发送多次返回的结果应该相同。</p>
-<p>特点：</p>
-<p>get请求会把请求的参数附加在URL后面，这样会产生安全问题，如果是系统的登陆接口采用的get请求，需要对请求的参数做一个加密。</p>
-<p>get请求其实本身HTTP协议并没有限制它的URL大小，但是不同的浏览器对其有不同的大小长度限制</p>
-<h3 id="2、POST"><a href="#2、POST" class="headerlink" title="2、POST"></a>2、POST</h3><p>post请求一般是对服务器的数据做改变，常用来数据的提交，新增操作。</p>
-<p>特点：</p>
-<p>post请求的请求参数都是请求体中</p>
-<p>post请求本身HTTP协议也是没有限制大小的，限制它的是服务器的处理能力</p>
-<h3 id="3、PUT"><a href="#3、PUT" class="headerlink" title="3、PUT"></a>3、PUT</h3><p>put请求与post一样都会改变服务器的数据，但是put的侧重点在于对于数据的修改操作，但是post侧重于对于数据的增加。</p>
-<h3 id="4、DELETE"><a href="#4、DELETE" class="headerlink" title="4、DELETE"></a>4、DELETE</h3><p>delete请求用来删除服务器的资源。</p>
-<h3 id="5、OPTIONS"><a href="#5、OPTIONS" class="headerlink" title="5、OPTIONS"></a>5、OPTIONS</h3><p>options请求属于浏览器的预检请求，查看服务器是否接受请求，预检通过后，浏览器才会去发get，post，put，delete等请求。至于什么情况下浏览器会发预检请求，浏览器会会将请求分为两类，简单请求与非简单请求，非简单请求会产生预检options请求。</p>
-<p>关于options请求具体详细的可以观看另一位作者的这篇文章：[<a href="https://www.jianshu.com/p/5cf82f092201]" target="_blank" rel="noopener">https://www.jianshu.com/p/5cf82f092201]</a></p>
-<p>另外：这些不同方式的请求形式，只是一种规范定义而已，并不是说get请求无法修改服务器的数据，只是一种规范，比如你也可以所有的请求都通过post方式来访问，实现功能上面没有任何问题，只是说这种做不符合了规范而已，我们平常编码还是尽量符合规范比较好。</p>
-
+          <p>&emsp;&emsp;Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2020/03/23/hello-world/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -295,7 +383,7 @@
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
           
-            <a href="/2020/03/20/C++%20reference%20book/" class="post-title-link" itemprop="url">C++学习相关书籍推荐--从入门到内存泄漏</a>
+            <a href="/2020/03/20/C++%20reference%20book/" class="post-title-link" itemprop="url">C++学习相关书籍推荐--</a>
         </h1>
 
         <div class="post-meta">
@@ -312,7 +400,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-03-23 16:26:15" itemprop="dateModified" datetime="2020-03-23T16:26:15+08:00">2020-03-23</time>
+                <time title="修改时间：2020-03-24 08:30:00" itemprop="dateModified" datetime="2020-03-24T08:30:00+08:00">2020-03-24</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -330,7 +418,7 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>1.9k</span>
+              <span>2.1k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -348,118 +436,15 @@
     
     <div class="post-body" itemprop="articleBody">
       
-          <h1 id="C-学习相关资料"><a href="#C-学习相关资料" class="headerlink" title="C++学习相关资料"></a>C++学习相关资料</h1><p>主要还是给自己提个醒,希望能在薛定谔的时间里面把这些书籍都好好的学习一遍.</p>
-<h3 id="C-入门："><a href="#C-入门：" class="headerlink" title="C++入门："></a>C++入门：</h3><p>《C++Primer》 入门第一部.</p>
-<p>《深入浅出MFC》 很值得看的一本书。侯捷著 国货精品,本应归入学习vc的范畴，但他实际是对widows API的c++框架介绍,用来做vc项目只能起辅助作用,对建立c++面向对象思想却多有启迪。</p>
-<p>《The C++ standard library（C++标准程序库）》 这是标准模板库字典，你可以在本书中找到STL相关的一切知识。本书焦点放在标准模板库、检查容器、迭代器、函数对象和STL算法上。每一个元素都有深刻的呈现，包括其介绍、设计、运用实例、细节解说、陷阱、意想不到的危险，以及相关类别和函数等。</p>
-<p>《C++实践之路》 周良忠译 一个计算器例子贯穿全书,几乎用到C++所有知识,真正的例子驱动教学法。</p>
-<h3 id="C-进阶："><a href="#C-进阶：" class="headerlink" title="C++进阶："></a>C++进阶：</h3><p>《Effective C++》和《More effective C++》 作者Scott Meyers。你应该熟读它们，并清楚地理解每个项目。该书围绕55条准则，每一条都介绍了一个可让你写出更好的C++程序代码的方法，并以特别设计过的例子详加讨论。</p>
-<p>《Exceptional C++（C++编程剖析）》和《More exceptional C++》 这两本书中都包含了40个C++编程问题，这些问题会让你磨练自己的技能，最终成为优秀的C++程序员。这些问题是Herb Sutter精心挑选，与ISO/ANSI C++官方标准相一致，帮助程序员在设计、架构和编码过程中保持良好的风格，从而使编写的C++软件更健壮、更高效。</p>
-<p>《Effective STL》 这是Scott Meyers的第三本C++专著，也是学习STL最权威的书籍。作者对书中的50个指导方针都作了详尽的分析，并配以示例。通过这些规则，C++开发者可以最大限度地使用STL。</p>
-<p>《Generic programming and the STL（泛型编程与STL）》 本书阐述了泛型程序设计的核心理念：concepts（概念）、modeling（模型）和refinement（改善），并为你展示这些观念如何导出STL的基础概念：iterators（迭代器）、containers（容器）和function objects（函数对象）。按照本书所述，你可以把STL想象成一个由concepts组成的library，你将学习到STL正式结构并理解其强大的优势。</p>
-<h3 id="深入C-："><a href="#深入C-：" class="headerlink" title="深入C++："></a>深入C++：</h3><p>《Modern C++ design（现代C++设计）》 作者Andrei Alexandrescu为C++程序员打开了一个新的局面。本书提供了一些针对软件设计的前沿方法，如联合设计模式、泛型编程，使程序员可以编写有表现力的、灵活的、高度可重用的代码。</p>
-<p>《Inside the C++ object model（深度探索C++对象模型）》 本书专注于C++面向对象程序设计的底层机制，包括结构式语意、临时性对象的生成、封装、继承，以及虚拟——虚拟函数和虚拟继承，帮助你理解程序的底层实现，以便写出更高效的代码。最后，一开始借助书本学习C、C++语言可能有些困难。但是，这些书用最好的方式介绍了C语言中的基本概念。借助这些书，你可以从学习基本的C语言开始，一直深入到学习C、C++语言编程中的高级技巧。完成书中的练习很重要。在实现这些习题的过程中，你可以高效理解和学习有关概念。这些书，也为你继续学习其他高级语言，比如C++、JAVA，提供了基础。</p>
-<h3 id="面向对象技术"><a href="#面向对象技术" class="headerlink" title="面向对象技术:"></a>面向对象技术:</h3><p>《设计模式-可复用面向对象软件的基础》 美国四人帮的跨时代大作 230页却足以开启一个时代,真正体现了面向对象技术的价值,是代码复用的经典之作,不能不看。</p>
-<p>《UML Distilled》 UML建模很火欧，但对我来说看主要目的是看懂类关系草图，这本小书足以。</p>
-<h3 id="其他补充"><a href="#其他补充" class="headerlink" title="其他补充:"></a>其他补充:</h3><p>《C++ Coding Standards: 101 Rules, Guidelines, and Best Practices》/《C++ 编程规范》 个人认为此书应为C++程序员必备的案头书。几乎Effective系列和Exceptional系列都在这里得到了总结。最新的模版、异常的业界经验都在这里的到了体现。可能的唯一缺陷就是对一个新手而言，关于为什么这么做的问题，解释的不够</p>
-<p>《华为C/C++编码规范》 作为编码规范的补充学习资料</p>
-<p>《Google C++ Coding Style》 作为编码规范的补充学习资料</p>
-<p>《数据结构与算法分析C++语言描述》 这是所有编程语言中最应该学习的部分，程序组成的基础之一。顺序存储、链式存储、循环链表；双向链表、栈(顺序和链式)、队列(顺序和链式)；栈的应用、树基本概念及遍历、二叉树；排序算法、并归算法、选择、插入、快速、希尔。</p>
-
-      
-    </div>
-
-    
-    
-    
-	<div>
-	  
-	</div>
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
+          <center>从入门到内存泄漏</center>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2020/03/20/C++%20reference%20book/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
         
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/03/18/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/cdh1.gif">
-      <meta itemprop="name" content="cdh">
-      <meta itemprop="description" content="菜逼程序员">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="cdh">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/03/18/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-03-18 16:19:42" itemprop="dateCreated datePublished" datetime="2020-03-18T16:19:42+08:00">2020-03-18</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-03-19 17:27:24" itemprop="dateModified" datetime="2020-03-19T17:27:24+08:00">2020-03-19</time>
-              </span>
-
-          <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-file-word-o"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>374</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-clock-o"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-      
-          <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start-a-Post"><a href="#Quick-Start-a-Post" class="headerlink" title="Quick Start a Post"></a>Quick Start a Post</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-<h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><p><a href="https://hexo.io/zh-cn/docs/commands" target="_blank" rel="noopener">点击浏览更多详细内容</a></p>
-
       
     </div>
 
@@ -559,7 +544,7 @@
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-count">4</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -603,12 +588,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-area-chart"></i>
     </span>
-    <span title="站点总字数">3k</span>
+    <span title="站点总字数">7k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">3 分钟</span>
+    <span title="站点阅读时长">6 分钟</span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v4.2.0
   </div>

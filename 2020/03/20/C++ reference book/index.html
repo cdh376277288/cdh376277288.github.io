@@ -20,15 +20,15 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Muse","version":"7.7.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"./public/search.xml"};
   </script>
 
-  <meta name="description" content="C++学习相关资料主要还是给自己提个醒,希望能在薛定谔的时间里面把这些书籍都好好的学习一遍. C++入门：《C++Primer》 入门第一部. 《深入浅出MFC》 很值得看的一本书。侯捷著 国货精品,本应归入学习vc的范畴，但他实际是对widows API的c++框架介绍,用来做vc项目只能起辅助作用,对建立c++面向对象思想却多有启迪。 《The C++ standard library（C++">
+  <meta name="description" content="从入门到内存泄漏">
 <meta property="og:type" content="article">
-<meta property="og:title" content="C++学习相关书籍推荐--从入门到内存泄漏">
+<meta property="og:title" content="C++学习相关书籍推荐--">
 <meta property="og:url" content="http://yoursite.com/2020/03/20/C++%20reference%20book/index.html">
 <meta property="og:site_name" content="cdh">
-<meta property="og:description" content="C++学习相关资料主要还是给自己提个醒,希望能在薛定谔的时间里面把这些书籍都好好的学习一遍. C++入门：《C++Primer》 入门第一部. 《深入浅出MFC》 很值得看的一本书。侯捷著 国货精品,本应归入学习vc的范畴，但他实际是对widows API的c++框架介绍,用来做vc项目只能起辅助作用,对建立c++面向对象思想却多有启迪。 《The C++ standard library（C++">
+<meta property="og:description" content="从入门到内存泄漏">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-03-20T01:17:59.000Z">
-<meta property="article:modified_time" content="2020-03-23T08:26:15.775Z">
+<meta property="article:modified_time" content="2020-03-24T00:30:00.477Z">
 <meta property="article:author" content="cdh">
 <meta property="article:tag" content="学习资料">
 <meta name="twitter:card" content="summary">
@@ -46,7 +46,7 @@
   };
 </script>
 
-  <title>C++学习相关书籍推荐--从入门到内存泄漏 | cdh</title>
+  <title>C++学习相关书籍推荐-- | cdh</title>
   
 
 
@@ -209,7 +209,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          C++学习相关书籍推荐--从入门到内存泄漏
+          C++学习相关书籍推荐--
         </h1>
 
         <div class="post-meta">
@@ -226,7 +226,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-03-23 16:26:15" itemprop="dateModified" datetime="2020-03-23T16:26:15+08:00">2020-03-23</time>
+                <time title="修改时间：2020-03-24 08:30:00" itemprop="dateModified" datetime="2020-03-24T08:30:00+08:00">2020-03-24</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -244,7 +244,7 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>1.9k</span>
+              <span>2.1k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -262,23 +262,25 @@
     
     <div class="post-body" itemprop="articleBody">
       
-        <h1 id="C-学习相关资料"><a href="#C-学习相关资料" class="headerlink" title="C++学习相关资料"></a>C++学习相关资料</h1><p>主要还是给自己提个醒,希望能在薛定谔的时间里面把这些书籍都好好的学习一遍.</p>
-<h3 id="C-入门："><a href="#C-入门：" class="headerlink" title="C++入门："></a>C++入门：</h3><p>《C++Primer》 入门第一部.</p>
-<p>《深入浅出MFC》 很值得看的一本书。侯捷著 国货精品,本应归入学习vc的范畴，但他实际是对widows API的c++框架介绍,用来做vc项目只能起辅助作用,对建立c++面向对象思想却多有启迪。</p>
-<p>《The C++ standard library（C++标准程序库）》 这是标准模板库字典，你可以在本书中找到STL相关的一切知识。本书焦点放在标准模板库、检查容器、迭代器、函数对象和STL算法上。每一个元素都有深刻的呈现，包括其介绍、设计、运用实例、细节解说、陷阱、意想不到的危险，以及相关类别和函数等。</p>
-<p>《C++实践之路》 周良忠译 一个计算器例子贯穿全书,几乎用到C++所有知识,真正的例子驱动教学法。</p>
-<h3 id="C-进阶："><a href="#C-进阶：" class="headerlink" title="C++进阶："></a>C++进阶：</h3><p>《Effective C++》和《More effective C++》 作者Scott Meyers。你应该熟读它们，并清楚地理解每个项目。该书围绕55条准则，每一条都介绍了一个可让你写出更好的C++程序代码的方法，并以特别设计过的例子详加讨论。</p>
-<p>《Exceptional C++（C++编程剖析）》和《More exceptional C++》 这两本书中都包含了40个C++编程问题，这些问题会让你磨练自己的技能，最终成为优秀的C++程序员。这些问题是Herb Sutter精心挑选，与ISO/ANSI C++官方标准相一致，帮助程序员在设计、架构和编码过程中保持良好的风格，从而使编写的C++软件更健壮、更高效。</p>
-<p>《Effective STL》 这是Scott Meyers的第三本C++专著，也是学习STL最权威的书籍。作者对书中的50个指导方针都作了详尽的分析，并配以示例。通过这些规则，C++开发者可以最大限度地使用STL。</p>
-<p>《Generic programming and the STL（泛型编程与STL）》 本书阐述了泛型程序设计的核心理念：concepts（概念）、modeling（模型）和refinement（改善），并为你展示这些观念如何导出STL的基础概念：iterators（迭代器）、containers（容器）和function objects（函数对象）。按照本书所述，你可以把STL想象成一个由concepts组成的library，你将学习到STL正式结构并理解其强大的优势。</p>
-<h3 id="深入C-："><a href="#深入C-：" class="headerlink" title="深入C++："></a>深入C++：</h3><p>《Modern C++ design（现代C++设计）》 作者Andrei Alexandrescu为C++程序员打开了一个新的局面。本书提供了一些针对软件设计的前沿方法，如联合设计模式、泛型编程，使程序员可以编写有表现力的、灵活的、高度可重用的代码。</p>
-<p>《Inside the C++ object model（深度探索C++对象模型）》 本书专注于C++面向对象程序设计的底层机制，包括结构式语意、临时性对象的生成、封装、继承，以及虚拟——虚拟函数和虚拟继承，帮助你理解程序的底层实现，以便写出更高效的代码。最后，一开始借助书本学习C、C++语言可能有些困难。但是，这些书用最好的方式介绍了C语言中的基本概念。借助这些书，你可以从学习基本的C语言开始，一直深入到学习C、C++语言编程中的高级技巧。完成书中的练习很重要。在实现这些习题的过程中，你可以高效理解和学习有关概念。这些书，也为你继续学习其他高级语言，比如C++、JAVA，提供了基础。</p>
-<h3 id="面向对象技术"><a href="#面向对象技术" class="headerlink" title="面向对象技术:"></a>面向对象技术:</h3><p>《设计模式-可复用面向对象软件的基础》 美国四人帮的跨时代大作 230页却足以开启一个时代,真正体现了面向对象技术的价值,是代码复用的经典之作,不能不看。</p>
-<p>《UML Distilled》 UML建模很火欧，但对我来说看主要目的是看懂类关系草图，这本小书足以。</p>
-<h3 id="其他补充"><a href="#其他补充" class="headerlink" title="其他补充:"></a>其他补充:</h3><p>《C++ Coding Standards: 101 Rules, Guidelines, and Best Practices》/《C++ 编程规范》 个人认为此书应为C++程序员必备的案头书。几乎Effective系列和Exceptional系列都在这里得到了总结。最新的模版、异常的业界经验都在这里的到了体现。可能的唯一缺陷就是对一个新手而言，关于为什么这么做的问题，解释的不够</p>
-<p>《华为C/C++编码规范》 作为编码规范的补充学习资料</p>
-<p>《Google C++ Coding Style》 作为编码规范的补充学习资料</p>
-<p>《数据结构与算法分析C++语言描述》 这是所有编程语言中最应该学习的部分，程序组成的基础之一。顺序存储、链式存储、循环链表；双向链表、栈(顺序和链式)、队列(顺序和链式)；栈的应用、树基本概念及遍历、二叉树；排序算法、并归算法、选择、插入、快速、希尔。</p>
+        <center>从入门到内存泄漏</center>
+<a id="more"></a>
+
+<h4 id="C-学习相关资料"><a href="#C-学习相关资料" class="headerlink" title="C++学习相关资料"></a><font color="#000000">C++学习相关资料</font></h4><h5 id="C-入门："><a href="#C-入门：" class="headerlink" title="C++入门："></a>C++入门：</h5><p>&emsp;&emsp;《C++Primer》 入门第一部.</p>
+<p>&emsp;&emsp;《深入浅出MFC》 很值得看的一本书。侯捷著 国货精品,本应归入学习vc的范畴，但他实际是对widows API的c++框架介绍,用来做vc项目只能起辅助作用,对建立c++面向对象思想却多有启迪。</p>
+<p>&emsp;&emsp;《The C++ standard library（C++标准程序库）》 这是标准模板库字典，你可以在本书中找到STL相关的一切知识。本书焦点放在标准模板库、检查容器、迭代器、函数对象和STL算法上。每一个元素都有深刻的呈现，包括其介绍、设计、运用实例、细节解说、陷阱、意想不到的危险，以及相关类别和函数等。</p>
+<p>&emsp;&emsp;《C++实践之路》 周良忠译 一个计算器例子贯穿全书,几乎用到C++所有知识,真正的例子驱动教学法。</p>
+<h5 id="C-进阶"><a href="#C-进阶" class="headerlink" title="C++进阶"></a>C++进阶</h5><p>&emsp;&emsp;《Effective C++》和《More effective C++》 作者Scott Meyers。你应该熟读它们，并清楚地理解每个项目。该书围绕55条准则，每一条都介绍了一个可让你写出更好的C++程序代码的方法，并以特别设计过的例子详加讨论。</p>
+<p>&emsp;&emsp;《Exceptional C++（C++编程剖析）》和《More exceptional C++》 这两本书中都包含了40个C++编程问题，这些问题会让你磨练自己的技能，最终成为优秀的C++程序员。这些问题是Herb Sutter精心挑选，与ISO/ANSI C++官方标准相一致，帮助程序员在设计、架构和编码过程中保持良好的风格，从而使编写的C++软件更健壮、更高效。</p>
+<p>&emsp;&emsp;《Effective STL》 这是Scott Meyers的第三本C++专著，也是学习STL最权威的书籍。作者对书中的50个指导方针都作了详尽的分析，并配以示例。通过这些规则，C++开发者可以最大限度地使用STL。</p>
+<p>&emsp;&emsp;《Generic programming and the STL（泛型编程与STL）》 本书阐述了泛型程序设计的核心理念：concepts（概念）、modeling（模型）和refinement（改善），并为你展示这些观念如何导出STL的基础概念：iterators（迭代器）、containers（容器）和function objects（函数对象）。按照本书所述，你可以把STL想象成一个由concepts组成的library，你将学习到STL正式结构并理解其强大的优势。</p>
+<h5 id="深入C"><a href="#深入C" class="headerlink" title="深入C++"></a>深入C++</h5><p>&emsp;&emsp;《Modern C++ design（现代C++设计）》 作者Andrei Alexandrescu为C++程序员打开了一个新的局面。本书提供了一些针对软件设计的前沿方法，如联合设计模式、泛型编程，使程序员可以编写有表现力的、灵活的、高度可重用的代码。</p>
+<p>&emsp;&emsp;《Inside the C++ object model（深度探索C++对象模型）》 本书专注于C++面向对象程序设计的底层机制，包括结构式语意、临时性对象的生成、封装、继承，以及虚拟——虚拟函数和虚拟继承，帮助你理解程序的底层实现，以便写出更高效的代码。最后，一开始借助书本学习C、C++语言可能有些困难。但是，这些书用最好的方式介绍了C语言中的基本概念。借助这些书，你可以从学习基本的C语言开始，一直深入到学习C、C++语言编程中的高级技巧。完成书中的练习很重要。在实现这些习题的过程中，你可以高效理解和学习有关概念。这些书，也为你继续学习其他高级语言，比如C++、JAVA，提供了基础。</p>
+<h5 id="面向对象技术"><a href="#面向对象技术" class="headerlink" title="面向对象技术"></a>面向对象技术</h5><p>&emsp;&emsp;《设计模式-可复用面向对象软件的基础》 美国四人帮的跨时代大作 230页却足以开启一个时代,真正体现了面向对象技术的价值,是代码复用的经典之作,不能不看。</p>
+<p>&emsp;&emsp;《UML Distilled》 UML建模很火欧，但对我来说看主要目的是看懂类关系草图，这本小书足以。</p>
+<h5 id="其他补充"><a href="#其他补充" class="headerlink" title="其他补充"></a>其他补充</h5><p>&emsp;&emsp;《C++ Coding Standards: 101 Rules, Guidelines, and Best Practices》/《C++ 编程规范》 个人认为此书应为C++程序员必备的案头书。几乎Effective系列和Exceptional系列都在这里得到了总结。最新的模版、异常的业界经验都在这里的到了体现。可能的唯一缺陷就是对一个新手而言，关于为什么这么做的问题，解释的不够</p>
+<p>&emsp;&emsp;《华为C/C++编码规范》 作为编码规范的补充学习资料</p>
+<p>&emsp;&emsp;《Google C++ Coding Style》 作为编码规范的补充学习资料</p>
+<p>&emsp;&emsp;《数据结构与算法分析C++语言描述》 这是所有编程语言中最应该学习的部分，程序组成的基础之一。顺序存储、链式存储、循环链表；双向链表、栈(顺序和链式)、队列(顺序和链式)；栈的应用、树基本概念及遍历、二叉树；排序算法、并归算法、选择、插入、快速、希尔。</p>
 
     </div>
 
@@ -305,13 +307,10 @@
 
         
     <div class="post-nav">
+      <div class="post-nav-item"></div>
       <div class="post-nav-item">
-    <a href="/2020/03/18/hello-world/" rel="prev" title="Hello World">
-      <i class="fa fa-chevron-left"></i> Hello World
-    </a></div>
-      <div class="post-nav-item">
-    <a href="/2020/03/23/Difference-between-GET-POST-and-PUT-in-HTTP/" rel="next" title="HTTP中GET，POST和PUT等请求方式的区别">
-      HTTP中GET，POST和PUT等请求方式的区别 <i class="fa fa-chevron-right"></i>
+    <a href="/2020/03/23/hello-world/" rel="next" title="Hello World">
+      Hello World <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -372,7 +371,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#C-学习相关资料"><span class="nav-number">1.</span> <span class="nav-text">C++学习相关资料</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#C-入门："><span class="nav-number">1.0.1.</span> <span class="nav-text">C++入门：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#C-进阶："><span class="nav-number">1.0.2.</span> <span class="nav-text">C++进阶：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#深入C-："><span class="nav-number">1.0.3.</span> <span class="nav-text">深入C++：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#面向对象技术"><span class="nav-number">1.0.4.</span> <span class="nav-text">面向对象技术:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#其他补充"><span class="nav-number">1.0.5.</span> <span class="nav-text">其他补充:</span></a></li></ol></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#C-学习相关资料"><span class="nav-number">1.</span> <span class="nav-text">C++学习相关资料</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#C-入门："><span class="nav-number">1.1.</span> <span class="nav-text">C++入门：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#C-进阶"><span class="nav-number">1.2.</span> <span class="nav-text">C++进阶</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#深入C"><span class="nav-number">1.3.</span> <span class="nav-text">深入C++</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#面向对象技术"><span class="nav-number">1.4.</span> <span class="nav-text">面向对象技术</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#其他补充"><span class="nav-number">1.5.</span> <span class="nav-text">其他补充</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -401,7 +400,7 @@
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-count">4</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -445,12 +444,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-area-chart"></i>
     </span>
-    <span title="站点总字数">3k</span>
+    <span title="站点总字数">7k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">3 分钟</span>
+    <span title="站点阅读时长">6 分钟</span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v4.2.0
   </div>
