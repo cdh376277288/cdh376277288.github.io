@@ -23,20 +23,20 @@
   <meta name="description" content="&amp;emsp;&amp;emsp;根据 HTTP 标准，HTTP 请求可以使用多种请求方法。HTTP1.0 定义了三种请求方法： GET, POST 和 HEAD方法。HTTP1.1 新增了六种请求方法：OPTIONS、PUT、PATCH、DELETE、TRACE 和 CONNECT 方法。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="HTTP常用的几种请求方式">
-<meta property="og:url" content="http://yoursite.com/2020/03/23/Difference-between-GET-POST-and-PUT-in-HTTP/index.html">
+<meta property="og:url" content="http://yoursite.com/2020/03/23/HTTP%E5%B8%B8%E7%94%A8%E7%9A%84%E5%87%A0%E7%A7%8D%E8%AF%B7%E6%B1%82%E6%96%B9%E5%BC%8F/index.html">
 <meta property="og:site_name" content="cdh">
 <meta property="og:description" content="&amp;emsp;&amp;emsp;根据 HTTP 标准，HTTP 请求可以使用多种请求方法。HTTP1.0 定义了三种请求方法： GET, POST 和 HEAD方法。HTTP1.1 新增了六种请求方法：OPTIONS、PUT、PATCH、DELETE、TRACE 和 CONNECT 方法。">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://yoursite.com/2020/03/23/Difference-between-GET-POST-and-PUT-in-HTTP/p1.jpg">
+<meta property="og:image" content="http://yoursite.com/2020/03/23/HTTP%E5%B8%B8%E7%94%A8%E7%9A%84%E5%87%A0%E7%A7%8D%E8%AF%B7%E6%B1%82%E6%96%B9%E5%BC%8F/p1.jpg">
 <meta property="article:published_time" content="2020-03-23T08:32:13.000Z">
 <meta property="article:modified_time" content="2020-03-24T00:29:55.370Z">
 <meta property="article:author" content="cdh">
 <meta property="article:tag" content="HTTP">
 <meta property="article:tag" content="网络编程">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://yoursite.com/2020/03/23/Difference-between-GET-POST-and-PUT-in-HTTP/p1.jpg">
+<meta name="twitter:image" content="http://yoursite.com/2020/03/23/HTTP%E5%B8%B8%E7%94%A8%E7%9A%84%E5%87%A0%E7%A7%8D%E8%AF%B7%E6%B1%82%E6%96%B9%E5%BC%8F/p1.jpg">
 
-<link rel="canonical" href="http://yoursite.com/2020/03/23/Difference-between-GET-POST-and-PUT-in-HTTP/">
+<link rel="canonical" href="http://yoursite.com/2020/03/23/HTTP%E5%B8%B8%E7%94%A8%E7%9A%84%E5%87%A0%E7%A7%8D%E8%AF%B7%E6%B1%82%E6%96%B9%E5%BC%8F/">
 
 
 <script id="page-configurations">
@@ -199,7 +199,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/03/23/Difference-between-GET-POST-and-PUT-in-HTTP/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/03/23/HTTP%E5%B8%B8%E7%94%A8%E7%9A%84%E5%87%A0%E7%A7%8D%E8%AF%B7%E6%B1%82%E6%96%B9%E5%BC%8F/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/cdh1.gif">
@@ -280,7 +280,7 @@
 <h5 id="无状态"><a href="#无状态" class="headerlink" title="无状态"></a>无状态</h5><p>&emsp;&emsp;HTTP协议是无状态协议。无状态是指协议对于事务处理没有记忆能力。缺少状态意味着如果后续处理需要前面的信息，则它必须重传，这样可能导致每次连接传送的数据量增大。另一方面，在服务器不需要先前信息时它的应答就较快。</p>
 <h5 id="简单快速"><a href="#简单快速" class="headerlink" title="简单快速"></a>简单快速</h5><p>&emsp;&emsp;客户向服务器请求服务时，只需传送请求方法和路径。请求方法常用的有GET、HEAD、POST。每种方法规定了客户与服务器联系的类型不同。由于HTTP协议简单，使得HTTP服务器的程序规模小，因而通信速度很快。</p>
 <h5 id="灵活"><a href="#灵活" class="headerlink" title="灵活"></a>灵活</h5><p>&emsp;&emsp;HTTP允许传输任意类型的数据对象。正在传输的类型由Content-Type加以标记。</p>
-<h4 id="HTTP请求消息Request"><a href="#HTTP请求消息Request" class="headerlink" title="HTTP请求消息Request"></a><font color="#000000">HTTP请求消息Request</font></h4><p>&emsp;&emsp;包括:请求行（request line）、请求头部（header）、空行和请求数据四个部分组成。<br><img src="/2020/03/23/Difference-between-GET-POST-and-PUT-in-HTTP/p1.jpg" alt="HTTP请求报文格式"></p>
+<h4 id="HTTP请求消息Request"><a href="#HTTP请求消息Request" class="headerlink" title="HTTP请求消息Request"></a><font color="#000000">HTTP请求消息Request</font></h4><p>&emsp;&emsp;包括:请求行（request line）、请求头部（header）、空行和请求数据四个部分组成。<br><img src="/2020/03/23/HTTP%E5%B8%B8%E7%94%A8%E7%9A%84%E5%87%A0%E7%A7%8D%E8%AF%B7%E6%B1%82%E6%96%B9%E5%BC%8F/p1.jpg" alt="HTTP请求报文格式"></p>
 <h5 id="GET例子"><a href="#GET例子" class="headerlink" title="GET例子"></a>GET例子</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">GET /562f25980001b1b106000338.jpg HTTP/1.1</span><br><span class="line">Host    img.mukewang.com</span><br><span class="line">User-Agent    Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36</span><br><span class="line">Accept    image/webp,image/*,*/*;q=0.8</span><br><span class="line">Referer    http://www.imooc.com/</span><br><span class="line">Accept-Encoding    gzip, deflate, sdch</span><br><span class="line">Accept-Language    zh-CN,zh;q=0.8</span><br></pre></td></tr></table></figure>
 <p>&emsp;&emsp;第一部分：请求行，用来说明请求类型,要访问的资源以及所使用的HTTP版本.<br>GET说明请求类型为GET,[/562f25980001b1b106000338.jpg]为要访问的资源，该行的最后一部分说明使用的是HTTP1.1版本。<br>&emsp;&emsp;第二部分：请求头部，紧接着请求行（即第一行）之后的部分，用来说明服务器要使用的附加信息<br>从第二行起为请求头部，HOST将指出请求的目的地.User-Agent,服务器端和客户端脚本都能访问它,它是浏览器类型检测逻辑的重要基础.该信息由你的浏览器来定义,并且在每个请求中自动发送等等<br>&emsp;&emsp;第三部分：空行，请求头部后面的空行是必须的，即使第四部分的请求数据为空，也必须有空行。<br>&emsp;&emsp;第四部分：请求数据也叫主体，可以添加任意的其他数据。这个例子的请求数据为空。</p>
 <h5 id="POST例子"><a href="#POST例子" class="headerlink" title="POST例子"></a>POST例子</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">POST / HTTP1.1</span><br><span class="line">Host:www.wrox.com</span><br><span class="line">User-Agent:Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727; .NET CLR 3.0.04506.648; .NET CLR 3.5.21022)</span><br><span class="line">Content-Type:application/x-www-form-urlencoded</span><br><span class="line">Content-Length:40</span><br><span class="line">Connection: Keep-Alive</span><br><span class="line"></span><br><span class="line">name=Professional%20Ajax&amp;publisher=Wiley</span><br></pre></td></tr></table></figure>
@@ -316,12 +316,12 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2020/03/23/hello-world/" rel="prev" title="Hello World">
-      <i class="fa fa-chevron-left"></i> Hello World
+    <a href="/2020/03/20/C++%20reference%20book/" rel="prev" title="C++学习相关书籍推荐--">
+      <i class="fa fa-chevron-left"></i> C++学习相关书籍推荐--
     </a></div>
       <div class="post-nav-item">
-    <a href="/2020/03/31/ace/" rel="next" title="基于ACE框架的C++网络编程">
-      基于ACE框架的C++网络编程 <i class="fa fa-chevron-right"></i>
+    <a href="/2020/03/23/hello-world/" rel="next" title="Hello World">
+      Hello World <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
